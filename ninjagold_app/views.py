@@ -18,7 +18,6 @@ def cave(request):
     request.session['gold'] += fives
     now = datetime.datetime.now().strftime('%Y/%m/%d %I:%M %p')
     print("Earned", fives, "golds from the cave! (", now,")")
-    # print(f"this is {request.session['gold']}")
     return redirect('/')
 
 def house(request):
@@ -26,7 +25,6 @@ def house(request):
     request.session['gold'] += threes
     now = datetime.datetime.now().strftime('%Y/%m/%d %I:%M %p')
     print("Earned", threes, "golds from the house! (", now,")")
-    # print(f"this is {request.session['gold']}")
     return redirect('/')
 
 def casino(request):
@@ -34,5 +32,8 @@ def casino(request):
     request.session['gold'] += fifty
     now = datetime.datetime.now().strftime('%Y/%m/%d %I:%M %p')
     print("Earned/Lost", fifty, "golds from the casino! (", now,")")
-    # print(f"this is {request.session['gold']}")
+    return redirect('/')
+
+def process(request):
+# as of 11/18 i need to have the activities section post all the actions that were done
     return redirect('/')

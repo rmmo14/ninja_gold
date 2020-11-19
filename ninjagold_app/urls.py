@@ -7,4 +7,5 @@ urlpatterns = [
     path('cavegold', views.cave),
     path('housegold', views.house),
     path('casinogold', views.casino),
+    path('process_money', views.process)
 ]

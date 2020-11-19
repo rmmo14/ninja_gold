@@ -21,5 +21,5 @@ urlpatterns = [
     path('cavegold', include('ninjagold_app.urls')),
     path('housegold', include('ninjagold_app.urls')),
     path('casinogold', include('ninjagold_app.urls')),
-
+    path('process_money', include('ninjagold_app.urls')),
 ]
