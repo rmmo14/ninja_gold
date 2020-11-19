@@ -3,9 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('farmgold', views.farm),
-    path('cavegold', views.cave),
-    path('housegold', views.house),
-    path('casinogold', views.casino),
-    path('process_money', views.process)
+    path('gold', views.process),
 ]
